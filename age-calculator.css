@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-gray: hsl(0, 1%, 44%);
+    --off-black : hsl(0, 0%, 8%)
+}
+@font-face {
+    font-family: "poppins-regular";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins-italic";
+    src: url(fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: "poppins-Extrabolditalic";
+    src: url(fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-Extrabold";
+    src: url(fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "poppins-Bolditalic";
+    src: url(fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-Bold";
+    src: url(fonts/Poppins-Bold.ttf);
+}
+body{
+  background-color: var(--off-white);
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+.calculator-container{
+    margin-top: 80px;
+    width: 500px;
+    background-color: var(--white);
+    border-radius: 20px;
+    border-bottom-right-radius: 80px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.top-section{
+    position: relative;
+    display: flex;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--light-grey);
+}
+.calculate-button{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: var(--purple);
+    cursor: pointer;
+}
+.input-container{
+    margin-right: 20px;
+    flex: 1;
+}
+.valid-day, .valid-month, .valid-year{
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-family: poppins-Bold;
+}
+.invalid-day, .invalid-month, .invalid-year{
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-family: poppins-Bold;
+    color: var(--light-red);
+}
+.day-textbox, .month-textbox, .year-textbox{
+    font-family: poppins-Bold;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--light-grey);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.day-textbox-error, .month-textbox-error, .year-textbox-error{
+    font-family: poppins-Bold;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--light-red);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.day-textbox, .month-textbox, .year-textbox::placeholder{
+    font-family: poppins-Bold;
+    font-size: 20px;
+}
+.error-message-day, .error-message-month, .error-message-year{
+    margin-top: 5px;
+    font-size: 8px;
+    font-family: poppins-Bold;
+    color: var(--light-red);
+}
+.bottom-section{
+    padding-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.output-text{
+    font-family: poppins-Extrabold;
+    font-size: 60px;
+}
+.output-year-blank, .output-month-blank, .output-day-blank{
+    font-family: poppins-Extrabold;
+    font-size: 60px;
+    color: var(--purple);
+}

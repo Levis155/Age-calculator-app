@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Age calculator app
+        </title>
+
+        <link rel="stylesheet" href="age-calculator.css">
+
+    </head>
+
+    <body>
+        <div class="calculator-container">
+            <div class="top-section">
+                <div class="input-container">
+                    <p class="valid-day">DAY</p>
+                    <input class="day-textbox" type="text" placeholder="DD" minlength="1" maxlength="2">
+                    <P class="error-message-day"></P>
+                </div>
+                
+                <div class="input-container">
+                    <p class="valid-month">MONTH</p>
+                    <input class="month-textbox" type="text" placeholder="MM" minlength="1" maxlength="2">
+                    <P class="error-message-month"></P>
+                </div>
+                
+                <div class="input-container">
+                    <p class="valid-year">YEAR</p>
+                    <input class="year-textbox" type="text" placeholder="YYYY" minlength="4" maxlength="4">
+                    <P class="error-message-year"></P>
+                </div>
+                
+                <button class="calculate-button"><img src="images\icon-arrow.svg"></button>
+            
+            </div>
+
+
+            <div class="bottom-section">
+                <p class="output-text"><span class="output-year-blank">--</span>years</p>
+
+                <p class="output-text"><span class="output-month-blank">--</span>months</p>
+
+                <p class="output-text"><span class="output-day-blank">--</span>days</p>
+            </div>
+        </div>
+    </body>
+
+
+    <script src="age-calculator.js">
+    </script>
+</html>
